@@ -1,0 +1,20 @@
+-   id: check-yaml
+    name: Check YAML
+    description: This hook validates yaml files.
+    entry: check-yaml
+    language: golang
+    types: [yaml, text]
+
+-   id: end-of-file-fixer
+    name: End of file fixer
+    description: This hook fix end of file
+    entry: end-of-file-fixer
+    language: golang
+    types: [yaml, text]
+
+-   id: trailing-whitespace
+    name: Trim Trailing Whitespace
+    description: This hook trims trailing whitespace.
+    entry: check-yaml
+    language: golang
+    types: [yaml, text]

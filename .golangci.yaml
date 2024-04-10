@@ -1,0 +1,58 @@
+run:
+    concurrency: 4
+    timeout: "5m"
+    issues-exit-code: 2
+
+    allow-parallel-runners: true
+    allow-serial-runners: true
+
+    go: "1.22"
+
+output:
+  print-issued-lines: true
+  print-linter-name: true
+  uniq-by-line: true
+  path-prefix: ""
+
+  show-stats: false
+
+  sort-results: true
+
+linters:
+  enable-all: true
+  disable-all: false
+
+  presets:
+    - bugs
+    - comment
+    - complexity
+    - error
+    - format
+    - import
+    - metalinter
+    - module
+    - performance
+    - sql
+    - style
+    - test
+    - unused
+
+  fast: true
+
+issues:
+  exclude-use-default: true
+  exclude-case-sensitive: false
+  exclude-generated-strict: false
+  exclude-dirs-use-default: true
+
+  max-issues-per-linter: 50
+  max-same-issues: 3
+
+  new: false
+  fix: true
+
+  whole-files: false
+
+severity:
+  default-severity: "error"
+  case-sensitive: true
