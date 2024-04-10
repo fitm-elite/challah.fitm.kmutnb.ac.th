@@ -4,6 +4,4 @@ import (
 	_ "go.uber.org/automaxprocs"
 )
 
-func main() {
-
-}
+func main() {}
